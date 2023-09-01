@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi amor</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="card hidden" id="cardContent">
+           
+                        <div class="balloons">
+                            <div class="balloon red"></div>
+                            <div class="balloon blue"></div>
+                            <div class="balloon yellow"></div>
+                        </div>
+                        <h1>Feliz cumpleaños</h1>
+                        <p>
+                            En este día, no puedo evitar sentir una inmensa gratitud por tenerte en mi vida durante estos 6 años. Cada día con vos ha sido una bendición, y no puedo esperar para celebrar más cumpleaños juntos y también todo lo que sos. En este sexto cumpleaños que celebramos juntos, quiero que sepás cuanto valoro profundamente todo lo que sos. Eres una persona asombrosa con un corazón generoso y una sonrisa que puede iluminar cualquier lugar. Cada día con vos es un regalo que aprecio más de lo que las palabras pueden expresar.
+                                            </p>
+                                            <p class="message">
+                                                    En tu día especial, mi deseo más sincero es que este cumpleaños sea un reflejo de un poco de la alegría que nos das a todos tus seres queridos. Que te rodeen las personas que te aman y te aprecian tanto como yo lo hago. Que este próximo año te traiga nuevos logros, lindos momentos y más razones para sonreír.</p>
+                   
+    </div>
+
+    <footer class="hidden" id="footerContent">¡Feliz cumpleaños! Con amor, José Antonio León Murua.</footer>
+
+    <div id="audioContainer">
+            <audio id="audioPlayer" controls>
+              <source src="Ed Sheeran Perfect Official Music Video.mp3" type="audio/mp3">
+              Tu navegador no soporta HTML5 audio.
+            </audio>
+          </div>
+
+    <script>
+        const audioPlayer = document.getElementById('audioPlayer');
+        const cardContent = document.getElementById('cardContent');
+        const footerContent = document.getElementById('footerContent');
+
+        audioPlayer.currentTime = 50; // Establece el tiempo en segundos (2 minutos)
+
+        audioPlayer.addEventListener('play', () => {
+            cardContent.classList.remove('hidden');
+            footerContent.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+

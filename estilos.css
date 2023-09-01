@@ -1,0 +1,145 @@
+/* Estilos generales */
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .card {
+            margin-top: 25px!important;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #e91e63; /* Color rosa para los bordes */
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Estilos para el encabezado */
+        h1 {
+            font-size: 36px;
+            color: #e91e63; /* Color rosa */
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        /* Estilos para el párrafo */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        /* Estilos para destacar el mensaje */
+        .message {
+            background-color: #e91e63;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        /* Estilos para el pie de página */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+        
+        .balloons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .balloon {
+            width: 40px;
+            height: 60px;
+            background-color: #f39c12; /* Color naranja */
+            border-radius: 50%;
+            position: relative;
+            margin-top: 40px;
+            z-index: 2; /* Asegura que los círculos estén por encima de otros elementos */
+        }
+        
+        
+        .balloon::after {
+            content: "";
+            position: absolute;
+            bottom: -26px; /* Controla la distancia entre el globo y el hilo */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 30px; /* Longitud del hilo */
+            background-color: #33333383; /* Color del hilo */
+            border-radius: 50%;
+        
+            /* Animación de ondulación */
+            animation: wave 1s infinite alternate ease-in-out;
+        }
+        
+        @keyframes wave {
+            from {
+                transform: translateX(-50%) rotate(-5deg);
+            }
+            to {
+                transform: translateX(-50%) rotate(5deg);
+            }
+        }
+        
+        .red {
+            background-color: #e74c3c; /* Color rojo */
+        }
+        
+        .blue {
+            background-color: #3498db; /* Color azul */
+        }
+        
+        .yellow {
+            background-color: #f1c40f; /* Color amarillo */
+        }
+
+
+
+
+
+        button {
+            
+            text-decoration: none;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            
+        }
+
+        
+
+
+        .center-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Para ocupar toda la altura visible de la pantalla */
+        }
+
+        #audioContainer {
+            margin-top: 50px;
+            position:relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+          }
+        
+          #audioPlayer {
+            width: 300px; /* Ajusta el ancho según tus preferencias */
+          }
